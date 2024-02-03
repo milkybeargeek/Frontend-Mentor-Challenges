@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --font-400: 400;
+    --font-500: 500;
+    --font-700: 700;
+}
+
+/*page layout reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan',
+        sans-serif;
+    font-size: 15px;
+    background: no-repeat url(./images/bg-pattern-top-desktop.svg),
+        no-repeat url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: 100% 232px, 375% 673px;
+    background-position: top center, bottom center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin: auto;
+
+    @media (min-width: 1200px) {
+        background: no-repeat url("./images/bg-pattern-top-desktop.svg"), no-repeat url("./images/bg-pattern-bottom-desktop.svg");
+        background-size: 584px 362px, 1085px 673px;
+        background-position: top left, bottom right;
+    }
+
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.header {
+    max-width: 410px;
+}
+
+.header h1 {
+    font-size: 55px;
+    font-weight: var(--font-700);
+    margin-bottom: 25px;
+    color: var(--very-dark-magenta);
+    line-height: 0.86;
+    letter-spacing: -1.6px;
+}
+
+.header p {
+    font: size 17.5px;
+    line-height: 1.5;
+    color: var(--dark-grayish-magenta);
+    font-weight: var(--font-500);
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+    @media(min-width: 1200px) {
+        width: 540px;
+
+        :first-child {
+            align-self: flex-start;
+        }
+
+        :nth-child(2) {
+            align-self: center;
+        }
+
+        :last-child {
+            align-self: flex-end;
+        }
+    }
+}
+
+.review {
+    width: 327px;
+    background-color: #F7F2F7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 12px;
+
+
+    @media (min-width: 1200px) {
+        width: 445px;
+        flex-direction: row;
+        gap: 32.45px;
+        padding: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 49px auto 99px auto;
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
+        width: 1110px;
+        height: 266px;
+        margin: 71px auto 85px auto;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 327px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+    padding: 40px 32px 35px 32px;
+
+    @media (min-width: 1200px) {
+        gap: 27px;
+        width: 350px;
+    }
+}
+
+.card .info {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card .name {
+    font-weight: var(--font-700);
+    font-size: 17px;
+    line-height: 16px;
+    color: var(--white)
+}
+
+.card .info-buyer {
+    font-weight: var(--font-400);
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+    color: var(--soft-pink);
+}
+
+.card blockquote {
+    font-weight: var(--font-500);
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    color: var(--white);
+    width: 263px;
+
+    @media (min-width:1200px) {
+        width: 286px;
+    }
+}
+
+.colton {
+    @media (min-width: 1200px) {
+        align-self: start;
+    }
+}
+
+.irene {
+    @media (min-width: 1200px) {
+        align-self: center;
+    }
+}
+
+.anne {
+    @media (min-width: 1200px) {
+        align-self: end;
+    }
+}
+
+.attribution {
+    padding-top: 2em;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2em;
+    font-weight: 700;
+
+}
