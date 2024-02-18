@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+</head>
+
+<body class="bg-zinc-100">
+  <main class="flex items-center justify-center min-h-screen">
+    <!--3 cards section-->
+    <div class="max-w-[1080px] mx-auto flex flex-col sm:flex-row m-8">
+      <!--sedan-->
+      <div
+        class="bg-orange-500 rounded-t-xl sm:rounded-r-none sm:rounded-l-xl m-4 mb-0 sm:mb-4 sm:mr-0 sm:h-[460px] sm:w-[280px]">
+        <!--sedan content-->
+        <div class="m-8">
+          <img src="./icon-sedans.svg" alt="sedan" class="m-2">
+          <h1 class="font-BigShouldersDisplay uppercase text-4xl text-zinc-100 m-2 mt-6 mb-6 font-semibold">Sedans</h1>
+          <p class="text-white m-2 font-LexendDeca">
+            Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+            or on your next road trip.
+          </p>
+          <button
+            class=" bg-zinc-100 text-orange-500 border-2 rounded-3xl p-3 pl-8 pr-8 
+          sm:pt-2.5 sm:pb-2.5 hover:text-zinc-100 hover:border-zinc-100 hover:bg-transparent m-4 ml-2 sm:mt-16 font-semibold">Learn
+            more</button>
+        </div>
+      </div>
+      <!--suv-->
+      <div class="bg-teal-700 m-4 mt-0 mb-0 sm:mt-4 sm:mb-4 sm:ml-0 sm:mr-0 sm:h-[460px] sm:w-[280px]">
+        <!--suv content-->
+        <div class="m-8">
+          <img src="./icon-suvs.svg" alt="suv" class="m-2">
+          <h1 class="font-BigShouldersDisplay uppercase text-4xl text-zinc-100 m-2 mt-6 mb-6 font-semibold">SUVs</h1>
+          <p class="text-white m-2 font-LexendDeca">Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation
+            and off-road adventures.</p>
+          <button
+            class=" bg-zinc-100 text-teal-700 border-2 rounded-3xl p-3 pl-8 pr-8 
+          sm:pt-2.5 sm:pb-2.5 hover:text-zinc-100 hover:border-zinc-100 hover:bg-transparent m-4 ml-2 sm:mt-16 font-semibold">Learn
+            more</button>
+        </div>
+      </div>
+      <!--luxury-->
+      <div
+        class="bg-emerald-900 rounded-b-xl sm:rounded-r-xl sm:rounded-l-none m-4 mt-0 mb-0 sm:mt-4 sm:mb-4 sm:ml-0 sm:mr-0 sm:h-[460px] sm:w-[280px]">
+        <!--luxury content-->
+        <div class="m-8">
+          <img src="./icon-luxury.svg" alt="luxury" class="m-2">
+          <h1 class="font-BigShouldersDisplay uppercase text-4xl text-zinc-100 m-2 mt-6 mb-6 font-semibold">Luxury</h1>
+          <p class="text-white m-2 font-LexendDeca">Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury
+            rental and arrive in style.</p>
+          <button
+            class=" bg-zinc-100 text-emerald-900 border-2 rounded-3xl p-3 pl-8 pr-8 
+          sm:pt-2.5 sm:pb-2.5 hover:text-zinc-100 hover:border-zinc-100 hover:bg-transparent m-4 ml-2 sm:mt-16 font-semibold">Learn
+            more</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class=" attribution text-center -mt-12 font-bold text-black">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class=" text-orange-500">Frontend
+      Mentor</a>.
+    Coded by <a href="https://twitter.com/milkybeargeek" class=" text-orange-500">Sri Lakshmi</a>.
+  </footer>
+</body>
+
+</html>
