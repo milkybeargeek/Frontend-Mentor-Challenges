@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Frontend Mentor | Four card feature section</title>
+</head>
+
+<body class="bg-gray-50 flex flex-col font-poppins md:h-screen md:justify-center md:items-center">
+  <main
+    class="flex items-center flex-col justify-center min-h-screen w-full h-full mt-4 m-8 p-2 gap-1 place-items-center md:m-2">
+
+    <!--heading and sub-heading-->
+    <div class="flex flex-col items-center justify-center m-8">
+
+      <header>
+        <h1 class="font-Poppins font-extralight text-zinc-500 text-2xl text-center md:text-3xl">
+          Reliable, efficient delivery
+        </h1>
+        <h2 class="font-Poppins font-semibold text-gray-600 text-2xl text-center md:text-3xl">
+          Powered by Technology
+        </h2>
+      </header>
+
+      <p class="font-Poppins font-normal text-sm text-center text-zinc-400 py-5 md:max-w-md">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+
+    </div>
+    <!--cards section-->
+    <div class="flex flex-col gap-5 mt-10 md:grid grid-cols-3 md:gap-8 md:mt-3">
+
+      <!--supervisor-->
+      <div
+        class="bg-white p-8 flex flex-col gap-2 rounded-md border-t-teal-300 border-t-4 shadow-slate-200 shadow-x; drop-shadow-lg md:max-w-xs col-start-1 md:translate-y-1/2 md:p-7">
+        <!--heading-->
+        <h2 class="font-Poppins font-medium text-xl text-gray-600">
+          Supervisor
+        </h2>
+        <!--content-->
+        <p class="font-Poppins text-zinc-400 text-xs leading-5 pb-3 font-medium">
+          Monitors activity to identify project roadblocks
+        </p>
+        <!--image-->
+        <img src=" ./icon-supervisor.svg" alt="Supervisor" class="w-12.1 self-end md:w-12" />
+      </div>
+
+      <!--Team builder-->
+      <div
+        class="bg-white p-8 flex flex-col gap-2 rounded-md border-t-rose-500 border-t-4 shadow-slate-200 drop-shadow-lg md:max-w-xs col-start-2 md:p-7">
+        <!--heading-->
+        <h2 class="font-Poppins font-medium text-xl text-gray-600">
+          Team Builder
+        </h2>
+        <!--content-->
+        <p class="font-Poppins text-zinc-400 text-xs leading-5 pb-3 font-medium">
+          Scans our talent network to create the optimal team for your project
+        </p>
+
+        <!--image-->
+        <img src="./icon-team-builder.svg" alt="Team Builder" class="w-12.1 self-end md:w-12" />
+      </div>
+
+      <!--Karma-->
+      <div
+        class="bg-white p-8 flex flex-col gap-2 rounded-md border-t-orange-300 border-t-4 shadow-slate-200 drop-shadow-lg md:max-w-xs col-start-2 md:p-7">
+        <!--heading-->
+        <h2 class="font-Poppins font-medium text-xl text-gray-600">Karma</h2>
+        <!--content-->
+        <p class="font-Poppins text-zinc-400 text-xs leading-5 pb-3 font-medium">
+          Regularly evaluates our talent to ensure quality
+        </p>
+        <!--image-->
+        <img src="./icon-karma.svg" alt="Karma" class="w-12.1 self-end md:w-12" />
+      </div>
+
+      <!--Calculator-->
+      <div
+        class="bg-white p-8 flex flex-col gap-2 rounded-md border-t-blue-400 border-t-4 shadow-slate-200 drop-shadow-lg md:max-w-xs col-start-3 md:-translate-y-32 md:p-7">
+        <!--heading-->
+        <h2 class="font-Poppins font-medium text-xl text-gray-600">
+          Calculator
+        </h2>
+        <!--content-->
+        <p class="font-Poppins text-zinc-400 text-xs leading-5 pb-3 font-medium">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <!--image-->
+        <img src=" ./icon-calculator.svg" alt="Calculator" class="w-12.1 self-end md:w-12" />
+      </div>
+
+    </div>
+  </main>
+  <footer class="items-center attribution text-center mt-2 mb-4 font-bold text-black">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-orange-500">Frontend Mentor</a>.
+    Coded by
+    <a href="https://twitter.com/milkybeargeek" class="text-orange-500">Sri Lakshmi</a>.
+  </footer>
+</body>
+
+</html>
