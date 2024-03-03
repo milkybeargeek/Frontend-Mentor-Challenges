@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-testimonials-grid-section-using-tailwind-css-d8WliThrNy)
 - Live Site URL: (https://testimonials-grid-section-mbg.netlify.app/)
 
 ## My process
