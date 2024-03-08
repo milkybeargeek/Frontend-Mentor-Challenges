@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with alternating feature blocks solution
 
-This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)
 
 ## Table of contents
 
@@ -55,7 +55,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://manuarora.in/boxshadows) - This helped me for box shadow effect, it has curated list of box shadows for TailwindCSS.
+- [Box Shadows](https://manuarora.in/boxshadows) - This helped me for box shadow effect, it has curated list of box shadows for TailwindCSS.
 
 ## Author
 
