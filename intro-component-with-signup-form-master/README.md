@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Intro Component with signup form](https://intro-component-signupform-mbg.netlify.app/)
 
 ## My process
 
@@ -46,10 +46,6 @@ Users should be able to:
 - [Tailwind CSS](https://tailwind.com/) - For styles
 
 ### What I learned
-
-## HTML Structure
-
-The HTML document provides the backbone of the webpage, with elements like <header>, <main>, and <footer> used to structure content logically.
 
 ## Responsive Design
 
