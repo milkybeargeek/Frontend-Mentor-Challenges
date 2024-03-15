@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body
+  class="bg-red-400 bg-[url('./bg-intro-mobile.png')]  flex-col justify-between lg:bg-[url('./bg-intro-desktop.png')] lg:bg-repeat-y min-h-screen flex pb-16 lg:pl-28 lg:pr-30 lg:w-full">
+  <main class="flex flex-col lg:flex-row lg:flex-grow items-center px-4 pt-16 lg:pt-14 space-y-2">
+    <!--content-->
+    <header class="text-center justify-center pt-2 p-4 lg:text-left lg:w-[50%]">
+      <h1 class="text-white font-Poppins text-3xl font-bold p-2 lg:p-4 lg:text-5xl lg:w-full">Learn to code by watching
+        others
+      </h1>
+      <p class="text-white font-Poppins text-sm pt-2 p-4 lg:p-4 lg:pt-2 lg:w-4/5 lg:text-base">See how
+        experienced
+        developers solve
+        problems
+        in
+        real-time.
+        Watching
+        scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </header>
+    <!--button-->
+    <section class="flex flex-col items-center space-y-4 ">
+      <button
+        class="bg-violet-800 px-2 py-4  rounded-xl w-[100%] text-white font-Poppins text-lg justify-center shadow-[0_0.5rem_0_0_rgba(0,0,0,0.1)] lg:w-full"><span
+          class="font-bold">Try
+          it free 7 days</span> then
+        <br>$20/mo.
+        thereafter
+      </button>
+      <!--form-->
+      <form
+        class="bg-white flex flex-col items-center px-6 pt-6 pb-6 rounded-xl font-Poppins shadow-[0_0.5rem_0_0_rgba(0,0,0,0.15)] space-y-6 lg:px-8 lg:pt-3 lg:pb-4 lg:w-full">
+        <!--first name-->
+        <label for="first-name" class="fixed top-[-99rem] left-[-99rem]">First Name</label>
+        <input type="text" placeholder="First Name" id="first-name" name="first-name"
+          class="text-zinc-700 placeholder:text-zinc-500 px-5 py-4 rounded border border-slate-300 mt-0 font-semibold w-full lg:w-full lg:mt-1">
+        <strong id="first-name-error" class="hidden text-red-400 text-xs font-medium italic text-right w-full"
+          aria-live="polite"></strong>
+
+        <!--last name-->
+        <label for="last-name" class="fixed top-[-99rem] left-[-99rem]">Last Name</label>
+        <input type="text" placeholder="Last Name" id="last-name" name="last-name"
+          class="text-zinc-700 placeholder:text-zinc-500 px-5 py-4 rounded border border-slate-300 mt-0 font-semibold w-full lg:w-full lg:mt-1">
+        <strong id="last-name-error" class="hidden text-red-400 text-xs font-medium italic text-right w-full "
+          aria-live="polite"></strong>
+
+        <!--email address-->
+        <label for="email-address" class="fixed top-[-99rem] left-[-99rem]">Email Address</label>
+        <input type="email" placeholder="Email Address" id="email-address" name="email-address"
+          class="text-zinc-700 placeholder:text-zinc-500 px-5 py-4 rounded border border-slate-300 mt-0 font-semibold w-full lg:w-full lg:mt-1">
+        <strong id="email-address-error" class="hidden text-red-400 text-xs font-medium italic text-right w-full"
+          aria-live="polite"></strong>
+
+        <!--password-->
+        <label for="password" class="fixed top-[-99rem] left-[-99rem]">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password"
+          class="text-zinc-700 placeholder:text-zinc-500 px-5 py-4 rounded border border-slate-300 mt-0 font-semibold w-full lg:w-full lg:mt-1">
+        <strong id="password-error" class="hidden text-red-400 text-xs font-medium italic text-right w-full"
+          aria-live="polite"></strong>
+        <button type="submit"
+          class="bg-emerald-400 text-white px-2 py-4 uppercase shadow-[0_0.25rem_0_0] shadow-[hsla(154,49%,49%,1)] rounded space-y-6 text-lg font-bold w-full lg:w-full lg:mt-1">
+          Claim your free trial
+        </button>
+        <p class="text-slate-400 items-center justify-center text-center px-4 mt-2 lg:mt-2"> <small>By clicking the
+            button, you
+            are agreeing to our <a href="#" class="text-red-400 font-bold">Terms and Services</a>
+          </small>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer class="items-center text-center mt-10 font-bold text-black">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-white">Frontend Mentor</a>.
+    Coded by
+    <a href="https://twitter.com/milkybeargeek" class="text-white">Sri Lakshmi</a>.
+  </footer>
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
