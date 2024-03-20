@@ -945,4 +945,8 @@ video {
   .xl\:max-w-\[38\.5rem\] {
     max-width: 38.5rem;
   }
+
+  .xl\:p-8 {
+    padding: 2rem;
+  }
 }
