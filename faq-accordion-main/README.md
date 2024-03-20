@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-faq-accordion-using-tailwind-css-and-javascript-sLjKxqHx6T)
 - Live Site URL: [FAQ Accordion](https://faq-accordion-mbg.netlify.app/)
 
 ## My process
