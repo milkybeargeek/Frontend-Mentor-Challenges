@@ -903,6 +903,10 @@ video {
     max-width: 32.5rem;
   }
 
+  .lg\:max-w-\[35\.5rem\] {
+    max-width: 35.5rem;
+  }
+
   .lg\:bg-desktop-image {
     background-image: url('./background-pattern-desktop.svg');
   }
