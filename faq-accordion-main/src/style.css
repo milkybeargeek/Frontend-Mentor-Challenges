@@ -864,11 +864,6 @@ video {
     margin-right: 2.5rem;
   }
 
-  .lg\:mx-12 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -882,11 +877,6 @@ video {
   .lg\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
-  }
-
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .lg\:-mt-24 {
@@ -937,16 +927,12 @@ video {
     padding: 1rem;
   }
 
-  .lg\:p-8 {
-    padding: 2rem;
-  }
-
   .lg\:p-10 {
     padding: 2.5rem;
   }
 
-  .lg\:p-16 {
-    padding: 4rem;
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:text-4xl {
