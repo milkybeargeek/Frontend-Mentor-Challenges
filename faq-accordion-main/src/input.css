@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accordion p {
+    display: none;
+}
+
+.accordion p.active {
+    display: block;
+    animation: .5s forwards;
+}
+
+.accordion h2::after {
+    content: url('./icon-plus.svg');
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+}
+
+.accordion h2.active::after {
+    content: url('./icon-minus.svg');
+}

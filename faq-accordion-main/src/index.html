@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="relative min-h-max bg-purple-100 font-WorkSans">
+  <div class="flex flex-col bg-mobile-image lg:bg-desktop-image min-h-72 bg-cover bg-center ">
+  </div>
+  <main class="flex w-full grow-0 items-center justify-center">
+    <section
+      class="mx-6 -mt-20 lg:-mt-24 rounded-lg bg-white p-4 drop-shadow-rgb(233,213,255) drop-shadow-2xl lg:max-w-[32.5rem] lg:p-8">
+      <!--FAQ and logo-->
+      <div class="flex items-center py-1 px-4">
+        <img src="./icon-star.svg" class="mr-6 inline w-6 sm:w-10 lg:w-8" alt="star">
+        <h1 class="font-WorkSans text-3xl lg:text-4xl font-extrabold text-zinc-800 tracking-tighter">
+          FAQs
+        </h1>
+      </div>
+      <ul class="flex flex-col pt-1 px-2">
+        <li class="h-full w-full cursor-pointer border-b-2  border-purple-100 py-6 
+          px-1  last:pb-2 accordion">
+          <h2
+            class="accordion_header font-bold w-full flex flex-row items-center justify-between bg-white text-left leading-5 text-zinc-800 text-lg hover:text-purple-600 focus:text-purple-600 pr-16">
+            What is Frontend Mentor, and how will it help me?
+          </h2>
+
+          <p class="accordion_body font-medium text-[#8c6991] pb-2 pt-4">Frontend Mentor offers realistic coding
+            challenges
+            to help
+            developers
+            improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.
+          </p>
+        </li>
+
+        <li class="h-full w-full cursor-pointer border-b-2 border-purple-100 py-6 
+          px-1 last:border-b-0 last:pb-2 accordion">
+          <h2
+            class="accordion_header font-bold w-full flex flex-row items-center justify-between bg-white text-left leading-5 text-zinc-800 text-lg hover:text-purple-600 focus:text-purple-600 pr-6">
+            Is Frontend Mentor free?
+          </h2>
+          <p class="accordion_body font-medium text-[#8c6991] pt-4">Yes, Frontend Mentor offers both free and premium
+            coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.</p>
+        </li>
+
+        <li class=" h-full w-full cursor-pointer border-b-2 border-purple-100 py-6 px-1 last:border-b-0 last:pb-2
+        accordion">
+          <h2
+            class="accordion_header font-bold w-full flex flex-row items-center justify-between bg-white text-left leading-5 text-zinc-800 text-lg hover:text-purple-600 focus:text-purple-600 pr-6">
+            Can I use Frontend Mentor projects in my portfolio?
+          </h2>
+          <p class="accordion_body font-medium text-[#8c6991]
+           pt-4">Yes, you can use projects completed on Frontend
+            Mentor in your portfolio. It's an excellent
+            way to showcase your skills to potential employers!</p>
+        </li>
+
+        <li class=" h-full w-full cursor-pointer border-b-2 border-purple-100 py-6  px-1 last:border-b-0 last:pb-2
+            accordion pb-4">
+          <h2
+            class="accordion_header font-bold w-full flex flex-row items-center justify-between bg-white text-left leading-5 text-zinc-800  text-lg hover:text-purple-600 focus:text-purple-600 pr-16">
+            How can I get help if I'm stuck on a challenge?
+          </h2>
+          <p class="accordion_body font-medium text-[#8c6991] pt-4">The best place to get help is inside Frontend
+            Mentor's Discord community. There's a help
+            channel where you can ask questions and seek support from other community members.</p>
+        </li>
+      </ul>
+
+    </section>
+
+  </main>
+  <footer class="items-center text-center mt-10 font-bold text-black pb-8">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-purple-600">Frontend Mentor</a>.
+    <br>Coded by
+    <a href="https://twitter.com/milkybeargeek" class="text-purple-600">Sri Lakshmi</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
