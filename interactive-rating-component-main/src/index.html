@@ -19,72 +19,73 @@
 </head>
 
 <body class="bg-black flex flex-col font-Overpass">
-  <div class="min-h-96 w-96 mx-auto mt-40" id="rating-page">
-    <!-- Rating state start -->
-    <section class="bg-VeryDarkBlue  rounded-3xl container flex flex-col justify-center p-7">
-      <picture class="h-11 w-11 bg-DarkBlue rounded-full flex items-center justify-center">
-        <img src="./icon-star.svg" alt="star icon" />
-      </picture>
-      <h1 class=" text-slate-50  text-2xl pt-6">
-        How did we do?
-      </h1>
-      <p class="text-MediumGrey text-sm font-medium pt-2 pb-3">
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
-      <div class="rating pt-4 flex flex-row space-x-5" id="ratings">
-        <a href="#" id="num1"
-          class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">1
-        </a>
-        <a href="#" id="num2"
-          class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">2
-        </a>
-        <a href="#" id="num3"
-          class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">3
-        </a>
-        <a href="#" id="num4"
-          class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">4
-        </a>
-        <a href="#" id="num5"
-          class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">5
-        </a>
-      </div>
-      <button id="submit-btn"
-        class="mt-6 p-3 bg-orange-500 rounded-3xl text-slate-50 uppercase tracking-widest text-sm justify-center items-center hover:text-orange-500 hover:bg-slate-50 font-semibold">Submit</button>
-    </section>
-    <!-- Rating state end -->
-  </div>
-
-  <!-- Thank you state start -->
-  <div class="min-h-96 w-96 mx-auto mt-40" id="thanks-page">
-    <section class="bg-VeryDarkBlue rounded-3xl container flex flex-col justify-center p-7">
-      <picture class="flex items-center justify-center m-4">
-        <img src="./illustration-thank-you.svg" alt="thank you">
-      </picture>
-      <!--selected rating-->
-      <div
-        class="mt-2 p-2 bg-DarkBlue rounded-3xl max-w-fit pl-3 pr-3 flex items-center justify-center ml-auto mr-auto text-lg">
-        <p class="text-orange-500">
-          You selected <span href="#" id="selectedRating">1</span> out of 5
+  <main>
+    <div class="min-h-96 w-96 mx-auto mt-40" id="rating-page">
+      <!-- Rating state start -->
+      <section class="bg-VeryDarkBlue  rounded-3xl container flex flex-col justify-center p-7">
+        <picture class="h-11 w-11 bg-DarkBlue rounded-full flex items-center justify-center">
+          <img src="./icon-star.svg" alt="star icon" />
+        </picture>
+        <h1 class=" text-slate-50  text-2xl pt-6">
+          How did we do?
+        </h1>
+        <p class="text-MediumGrey text-sm font-medium pt-2 pb-3">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
         </p>
-      </div>
-      <h1 class=" text-slate-50  text-3xl pt-6 text-center">
-        Thank you!
-      </h1>
-      <p class="text-MediumGrey text-base text-center font-medium pt-2">We appreciate you taking the time to give a
-        rating. If
-        you ever need more support,
-        don’t hesitate to get in touch!</p>
-    </section>
-  </div>
-  <!-- Thank you state end -->
-  <footer class="items-center text-center mt-10 font-bold text-sm text-white pb-8">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-orange-500">Frontend Mentor</a>
-    <br>Coded by
-    <a href="https://twitter.com/milkybeargeek" class="text-orange-500">Sri Lakshmi</a>
-  </footer>
+        <div class="rating pt-4 flex flex-row space-x-5" id="ratings">
+          <a id="num1"
+            class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">1
+          </a>
+          <a id="num2"
+            class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">2
+          </a>
+          <a id="num3"
+            class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">3
+          </a>
+          <a id="num4"
+            class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">4
+          </a>
+          <a id="num5"
+            class="ratingNum rounded-full bg-DarkBlue flex flex-col h-12 w-12 items-center justify-center text-MediumGrey font-bold hover:bg-orange-500 hover:text-slate-50 p-5">5
+          </a>
+        </div>
+        <button id="submit-btn"
+          class="mt-6 p-3 bg-orange-500 rounded-3xl text-slate-50 uppercase tracking-widest text-sm justify-center items-center hover:text-orange-500 hover:bg-slate-50 font-semibold">Submit</button>
+      </section>
+      <!-- Rating state end -->
+    </div>
 
+    <!-- Thank you state start -->
+    <div class="min-h-96 w-96 mx-auto mt-40" id="thanks-page">
+      <section class="bg-VeryDarkBlue rounded-3xl container flex flex-col justify-center p-7">
+        <picture class="flex items-center justify-center m-4">
+          <img src="./illustration-thank-you.svg" alt="thank you">
+        </picture>
+        <!--selected rating-->
+        <div
+          class="mt-2 p-2 bg-DarkBlue rounded-3xl max-w-fit pl-3 pr-3 flex items-center justify-center ml-auto mr-auto text-lg">
+          <p class="text-orange-500">
+            You selected <span href="#" id="selectedRating">1</span> out of 5
+          </p>
+        </div>
+        <h1 class=" text-slate-50  text-3xl pt-6 text-center">
+          Thank you!
+        </h1>
+        <p class="text-MediumGrey text-base text-center font-medium pt-2">We appreciate you taking the time to give a
+          rating. If
+          you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </section>
+    </div>
+    <!-- Thank you state end -->
+    <footer class="items-center text-center mt-10 font-bold text-sm text-white pb-8">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-orange-500">Frontend Mentor</a>
+      <br>Coded by
+      <a href="https://twitter.com/milkybeargeek" class="text-orange-500">Sri Lakshmi</a>
+    </footer>
+  </main>
 </body>
 <script src="script.js"></script>
 
