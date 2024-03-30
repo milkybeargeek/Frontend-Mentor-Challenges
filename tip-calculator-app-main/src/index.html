@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="min-h-screen flex flex-col font-SpaceMono bg-LightGrayishCyan">
+  <main class="flex flex-col w-full mt-10 lg:mt-20 mx-auto  lg:pr-80 lg:pl-80">
+
+    <picture class="flex items-center justify-center">
+      <img src="./logo.svg" alt="splitter logo">
+    </picture>
+
+    <div
+      class="flex flex-col md:flex-row bg-white  rounded-3xl w-full h-full mt-10 lg:min-w-72 md:mx-auto lg:min-h-64 lg:flex-row">
+      <!--Input section starts here-->
+      <div class="input-data m-8">
+        <!--bill display-->
+        <div class="bill relative">
+          <p class="text-DarkGrayishCyan">Bill</p>
+          <!--input of total bill-->
+          <div class="bill-input w-full relative mt-2 top-1/2 transform">
+            <img src="./icon-dollar.svg" alt="dollar icon" class="absolute pl-5 top-1/2 transform -translate-y-1/2">
+            <input type="text" maxlength="6"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8 || event.keyCode == 46"
+              name="bill" id="bill" placeholder="0"
+              class="bg-VeryLightGrayishCyan focus:outline-StrongCyan outline-8 pr-5 text-xl text-right w-full hover:cursor-pointer text-VeryDarkCyan rounded-md p-2">
+          </div>
+          <!--displaying error if input is empty-->
+          <span id="span-bill" class="span-bill hidden right-0 absolute bottom-10 text-red-500">Cannot be zero
+          </span>
+        </div>
+
+        <!--Tip selection-->
+        <div class="select-tip mt-8">
+          <p class="text-DarkGrayishCyan">Select Tip %</p>
+          <!--tips button and custom input-->
+          <div class="tip-btn grid grid-cols-2 md:grid-cols-3 lg:gird-cols-3 mx-auto gap-3 mt-3">
+            <button id="btn5" value="5"
+              class="btn bg-VeryDarkCyan text-white rounded-md p-2 text-2xl hover:bg-StrongCyan hover:text-VeryDarkCyan">5%
+            </button>
+
+            <button id="btn10" value="10"
+              class="btn bg-VeryDarkCyan text-white rounded-md p-2 text-2xl hover:bg-StrongCyan hover:text-VeryDarkCyan">10%
+            </button>
+
+            <button id="btn15" value="15"
+              class="btn bg-VeryDarkCyan text-white rounded-md p-2 text-2xl hover:bg-StrongCyan hover:text-VeryDarkCyan">15%
+            </button>
+
+            <button id="btn25" value="25"
+              class="btn bg-VeryDarkCyan text-white rounded-md p-2 text-2xl hover:bg-StrongCyan hover:text-VeryDarkCyan">25%
+            </button>
+
+            <button id="btn50" value="50"
+              class="btn bg-VeryDarkCyan text-white rounded-md p-2 text-2xl hover:bg-StrongCyan hover:text-VeryDarkCyan">50%
+            </button>
+
+            <input type="text" maxlength="3" id="custom" name="custom" placeholder="Custom"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8 || event.keyCode == 46"
+              class=" bg-VeryLightGrayishCyan text-DarkGrayishCyan rounded-md p-2 text-2xl hover:cursor-pointer focus:outline-StrongCyan hover:text-VeryDarkCyan text-center items-center justify-center">
+            </input>
+          </div>
+        </div>
+
+        <!--no.of people-->
+        <div id="peopleDiv" class="numOfPeople mt-8 relative">
+          <p class="text-DarkGrayishCyan">
+            Number of People
+          </p>
+          <!--no. of people -->
+          <div class="input-for-people relative mt-2">
+            <img src="./icon-person.svg" alt="person icon" class="absolute pl-5 top-1/2 transform -translate-y-1/2">
+            <input type="text" maxlength="10"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8 || event.keyCode == 46"
+              name="people" id="people" placeholder="0"
+              class="bg-VeryLightGrayishCyan focus:outline-StrongCyan outline-8 pr-5 text-xl text-right w-full hover:cursor-pointer text-VeryDarkCyan rounded-md p-2">
+          </div>
+          <span id="span-bill" class="span-bill hidden right-0 absolute bottom-10 text-red-500">Cannot be zero
+          </span>
+        </div>
+      </div>
+      <!--input section ends here-->
+
+      <!--result section starts here-->
+      <div class="result m-8 mt-4 bg-VeryDarkCyan rounded-xl lg:mt-8 lg:min-w-96">
+        <div class="m-6 flex flex-col justify-between h-60">
+          <div>
+            <!--Tip amount-->
+            <section class="text-white flex mt-9">
+              <h2>Tip Amount <br /> <span class="text-DarkGrayishCyan">/ person</span></h2>
+              <div class="flex-grow"></div>
+              <h3 class="result_tip_amount_value text-3xl text-StrongCyan" id="tip_amount">$0.00</h3>
+            </section>
+            <!--total-->
+            <section class="text-white flex mt-6">
+              <h2>Total <br /><span class="text-DarkGrayishCyan">/ person</span></h2>
+              <div class="flex-grow"></div>
+              <h3 class="result_tip_amount_value text-3xl text-StrongCyan" id="total_amount">$0.00</h3>
+            </section>
+          </div>
+
+          <button id="resetBtn"
+            class="uppercase tracking-wide text-xl text-VeryDarkCyan hover:bg-LightGrayishCyan  w-full rounded-md bg-StrongCyan mt-4 mb-4 p-2 font-bold lg:mt-28">
+            Reset
+          </button>
+        </div>
+      </div>
+      <!--result section ends here-->
+    </div>
+  </main>
+
+  <footer class="items-center attribution text-center mt-2 mb-2 text-lg text-DarkGrayishCyan p-8">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-VeryDarkCyan">Frontend
+      Mentor</a>.
+    Coded by
+    <a href="https://twitter.com/milkybeargeek" class="text-VeryDarkCyan">Sri Lakshmi</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
