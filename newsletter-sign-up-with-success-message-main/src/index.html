@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-DarkSlateGrey flex font-Roboto md:flex-col lg:flex-col flex-col items-center justify-center min-h-screen">
+  <main>
+    <!--signup page-->
+    <div
+      class=" flex flex-col lg:flex-rowh-full w-full bg-White mx-auto md:flex md:h-auto  md:mx-auto md:mt-12 lg:mt-12 md:mb-0 md:w-2/3 lg:w-auto lg:h-2/5 md:rounded-3xl justify-center">
+      <div class="flex flex-col lg:flex-row flex-grow" id="sign-up">
+        <div class="md:order-2 md:w-2/5 lg:w-full md:p-2 md:rounded-3xl md:m-1 lg:m-3 lg:order-2 items-center">
+          <img src="./illustration-sign-up-mobile.svg"
+            class="min-w-full h-auto mx-auto md:max-w-full md:h-96 lg:h-auto lg:w-full md:hidden" alt="Mobile Image">
+          <img src="./illustration-sign-up-desktop.svg"
+            class="min-w-full h-auto mx-auto hidden md:max-w-full md:h-96 md:block lg:h-full lg:w-96 "
+            alt="Desktop Image">
+        </div>
+
+        <div class="p-4 mt-2 md:w-2/3 lg:w-96 md:order-1 m-4 md:m-4 md:p-2 lg:p-0 lg:m-1 lg:order-1 lg:mt-8">
+          <div class="lg:p-8 p-3 lg:mt-8">
+            <h1 class="font-bold text-4xl md:text-4xl lg:text-5xl">Stay updated!</h1>
+            <div style="width: calc(100% - 1.5rem);">
+              <p class="pt-4 text-base font-medium text-DarkSlateGrey md:text-sm lg:text-sm">Join 60,000+ product
+                managers
+                receiving
+                monthly updates
+                on:</p>
+              <ul
+                class="pt-4 mr-4 text-DarkSlateGrey gap-y-4 font-medium text-base space-y-2 md:text-sm md:w-full lg:text-sm pb-8">
+                <li class="flex flex-row gap-3"><img src="./icon-list.svg" alt="icon">Product discovery
+                  and
+                  building
+                  what
+                  matters</li>
+                <li class="flex flex-row gap-3"><img src="./icon-list.svg" alt="icon">Measuring to
+                  ensure updates are a success</li>
+                <li class="flex flex-row gap-3"><img src="./icon-list.svg" alt="icon">And much more!
+                </li>
+              </ul>
+              <form id="form" class="md:text-sm md:w-full lg:text-sm" novalidate>
+                <label for="email" class="text-DarkSlateGrey font-bold text-sm mt-10">Email address
+                  <span class="text-base font-bold text-Tomato" id="validationMessage"></span>
+                </label>
+                <input id="email" name="email" placeholder="email@company.com" type="email"
+                  class="border-Grey border-2 rounded-md p-4 w-full mt-2 lg:w-80  invalid:border-tomato invalid:text-Tomato invalid:bg-Tomato/10">
+                <span
+                  class="absolute right-0 top-2 invisible peer-invalid:visible text-tomato font-[Roboto-Bold] text-xs">Valid
+                  email
+                  required</span>
+                <button
+                  class="bg-DarkSlateGrey font-semibold text-White p-4 mt-3 w-full rounded-md lg:w-80 hover:shadow-Tomato shadow-lg hover:bg-Tomato transition-colors ease-in-out duration-200">Subscribe
+                  to monthly
+                  newsletter</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div
+      class="hidden pt-36 lg:pt-12 md:pt-10  p-4 m-4 h-full w-full bg-White mx-auto md:flex md:h-auto  md:mx-auto md:mt-12 md:mb-0 md:w-2/3 lg:w-3/6 lg:h-full md:rounded-3xl  flex-col items-start lg:p-8"
+      id="success">
+      <div>
+        <img src=" ./icon-success.svg" alt="success-icon" class="h-auto w-auto m-6 lg:m-4">
+      </div>
+      <div>
+        <h1 class="font-bold text-4xl md:text-4xl lg:text-5xl m-6">Thanks for subscribing!</h1>
+        <p class="font-medium text-lg md:text-xl lg:text-lg m-1 p-6 pt-2">
+          A confirmation email has been sent to <span id="submittedEmail" class="font-bold"></span>. Please open it
+          and click the button
+          inside to confirm your subscription.
+        </p>
+        <button id="dismiss"
+          class="bg-DarkSlateGrey font-semibold text-White p-4 mt-3 w-full rounded-md lg:w-full  hover:shadow-Tomato shadow-lg hover:bg-Tomato transition-colors ease-in-out duration-200 ">Dismiss
+          message</button>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="p-2 flex items-center flex-row justify-center text-White font-Roboto text-sm font-semibold lg:flex-row gap-1">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-Tomato">Frontend
+      Mentor.</a>Coded by
+    <a href="https://twitter.com/milkybeargeek" class="text-Tomato"> Sri Lakshmi</a>
+  </footer>
+  <!--Success message end -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
