@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="font-Manrope bg-DarkBlue">
+  <div class="container mx-auto flex flex-col justify-center items-center h-screen p-8 ">
+    <!--card-->
+    <div
+      class="flex flex-col justify-center text-LightCyan rounded-2xl items-center h-80 sm:h-96 w-96 sm:w-96 lg:w-2/4 md:p-8 bg-DarkGrayishBlue p-4 text-center tracking-widest">
+      <!--advice and advice id-->
+      <p id="idNumber" class="text-sm font-normal text-NeonGreen  lg:text-lg"></p>
+      <h1 class="text-2xl font-bold md:text-2xl lg:6xl text-center mx-5 sm:mx-10 my-10">
+        <q class="w-64 h-72 p-4" id="quoteText"></q>
+      </h1>
+
+      <!--image-->
+      <div class="my-2">
+        <img src="./pattern-divider-desktop.svg" alt="pattern divider desktop" class="hidden lg:block">
+        <img src="./pattern-divider-mobile.svg" alt="pattern divider mobile" class="lg:hidden mb-6 sm:mb-10">
+      </div>
+
+    </div>
+    <button type="button" id="generateNewButton"
+      class="rounded-full p-6 bg-NeonGreen hover:shadow-3xl hover:shadow-NeonGreen customized-button -m-9 mb-6">
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+          fill="#202733" />
+      </svg>
+    </button>
+
+    <div
+      class="p-2 flex items-center flex-col justify-center text-LightCyan font-Roboto text-sm font-semibold lg:flex-col gap-1 mt-10">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-NeonGreen">Frontend
+        Mentor.</a>Coded by
+      <a href="https://twitter.com/milkybeargeek" class="text-NeonGreen"> Sri Lakshmi</a>
+    </div>
+  </div>
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
